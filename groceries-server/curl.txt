@@ -1,0 +1,19 @@
+
+
+# Create item
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"name":"Banana","quantity":"2"}' \
+  http://localhost:8080/api/groceries
+
+# Update item
+curl --header "Content-Type: application/json" \
+  --request PUT \
+  --data '{"name":"Bread","quantity":"4"}' \
+  http://localhost:8080/api/groceries/5df08062dc96fc8b7ded4a1d  
+
+
+ # Delete item
+curl --header "Content-Type: application/json" \
+  --request DELETE \
+  http://localhost:8080/api/groceries/5df08062dc96fc8b7ded4a1d   
